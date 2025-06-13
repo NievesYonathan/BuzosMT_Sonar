@@ -106,15 +106,6 @@ html {
 	margin-bottom: 0;
 }
 
-.table thead th {
-	color: #FFF;
-}
-
-.table tbody tr {
-	color: #333;
-	transition: all .2s ease-in-out;
-}
-
 .table-dark,
 .table {
 	background-color: #fff;
@@ -148,15 +139,15 @@ table form {
 
 /*----------  Text Styles  ----------*/
 .roboto-medium {
-	font-family: 'roboto_medium_regular';
+	font-family: 'roboto_medium_regular', sans-serif;
 }
 
 .roboto-condensed-light {
-	font-family: 'roboto_condensed_light';
+	font-family: 'roboto_condensed_light', sans-serif;
 }
 
 .roboto-condensed-regular {
-	font-family: 'roboto_condensed_regular';
+	font-family: 'roboto_condensed_regular', sans-serif;
 }
 
 /*----------  login Styles  ----------*/
@@ -243,20 +234,6 @@ table form {
 }
 
 /*  Nav Lateral */
-.nav-lateral {
-	width: 100%;
-	height: 100vh;
-	position: sticky;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	transition: all .2s ease-in-out;
-	background-image: url('../assets/img/nav-font.jpg');
-	background-position: center center;
-	background-size: cover;
-	box-sizing: border-box; /* Asegurar que padding no modifique el ancho */
-	overflow-y: auto;
-}
 
 .nav-lateral-bg {
 	display: none;
@@ -496,11 +473,6 @@ table form {
 	flex: 1;
 }
 
-.product-name {
-	font-size: 1.5em;
-	margin-bottom: 10px;
-}
-
 .product-quantity,
 .product-dates,
 .product-status,
@@ -551,7 +523,7 @@ table form {
 	text-transform: uppercase;
 	border-bottom: 1px solid var(--border-color);
 	transition: all .2s ease-in-out;
-	font-family: 'roboto_medium_regular';
+	font-family: 'roboto_medium_regular', sans-serif;
 }
 
 .tile:hover .tile-tittle {
@@ -572,7 +544,7 @@ table form {
 }
 
 .tile-icon>p {
-	font-family: 'roboto_medium_regular';
+	font-family: 'roboto_medium_regular', sans-serif;
 	height: 35px;
 	line-height: 35px;
 }
@@ -646,8 +618,6 @@ table form {
 
 
 /*  Bootstrap breakpoints */
-@media (min-width: 576px) {}
-
 @media (min-width: 768px) {
 	.nav-lateral.active {
 		transform: translateX(-400px);
@@ -657,10 +627,6 @@ table form {
 		padding-left: 0;
 	}
 }
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
 
 /*----------  Keyframes  ----------*/
 
@@ -742,21 +708,6 @@ table form {
 
 .img-user {
 	height: 12rem;
-}
-
-.image-container {
-    position: relative;
-    width: 150px; /* Ajusta el tamaño según lo necesites */
-    height: 150px;
-    overflow: hidden;
-    border-radius: 10px; /* Bordes redondeados opcionales */
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s ease;
 }
 
 /* !Estilos CSS para las cards de productos  en Produccion */

@@ -10,8 +10,6 @@ class Mensajes
     public const ESTADO_ACTUALIZADO = 'Estado actualizado correctamente';
     public const REQUIRED_STRING_50 = 'required|string|max:50';
     public const REQUIRED_DATE = 'required|date';
-    public const LOCALHOST = '127.0.0.1';
-    public const LOGS_LARAVEL = 'logs/laravel.log';
     public const NO_ACTION = 'no action';
     public const ATRIBUTE_INVALID = 'The selected :attribute is invalid.';
     public const USER_URL_IMG = '/user/image/{id}';

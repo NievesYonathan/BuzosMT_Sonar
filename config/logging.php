@@ -62,14 +62,14 @@ return [
 
         'single' => [
             'driver' => 'single',
-            'path' => storage_path(Mensajes::LOGS_LARAVEL),
+            'path' => storage_path(env('LOGS_LARAVEL')),
             'level' => env('LOG_LEVEL', 'debug'),
             'replace_placeholders' => true,
         ],
 
         'daily' => [
             'driver' => 'daily',
-            'path' => storage_path(Mensajes::LOGS_LARAVEL),
+            'path' => storage_path(env('LOGS_LARAVEL')),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => env('LOG_DAILY_DAYS', 14),
             'replace_placeholders' => true,
@@ -126,7 +126,7 @@ return [
         ],
 
         'emergency' => [
-            'path' => storage_path(Mensajes::LOGS_LARAVEL),
+            'path' => storage_path(env('LOGS_LARAVEL')),
         ],
 
     ],

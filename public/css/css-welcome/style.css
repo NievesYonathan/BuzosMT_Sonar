@@ -119,7 +119,6 @@ button.contact-btn {
     width: 8em; height: 2.4em;
     cursor: pointer;
     border-radius: 20em;
-    border: none;
     transition: background 0.5s, transform 0.5s;
     
     border: 1px solid #c2ccff33;
@@ -523,7 +522,6 @@ p {
     width: 100%; height: 500%;
     position: absolute; top: 0%;
     background: linear-gradient(90deg, #121521 0%, transparent 50%);
-    background: linear-gradient(0deg, #121521 80%, transparent 90%);
     z-index: 2;
 }
 .mountains > div {
@@ -1078,7 +1076,6 @@ button.contact-btns {
     width: 8em; height: 2.4em;
     cursor: pointer;
     border-radius: 20em;
-    border: none;
     transition: background 0.5s, transform 0.5s;
     
     border: 1px solid #c2ccff33;
