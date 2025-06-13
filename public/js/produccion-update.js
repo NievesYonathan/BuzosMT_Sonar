@@ -2,7 +2,7 @@ function actualizarProduccion(event) {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-    const produccionId = formData.get('produccion_id');
+    const produccionId = parseInt(formData.get('produccion_id'), 10);
     
     // Datos de producción
     const produccionData = {

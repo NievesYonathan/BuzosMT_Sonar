@@ -538,6 +538,7 @@ let VanillaTilt = (function () {
           } else if (this.element.hasAttribute("data-tilt-" + property)) {
             let attribute = this.element.getAttribute("data-tilt-" + property);
             try {
+              console.warn(`Error al parsear atributo 'data-tilt-${property}':`, e);
               newSettings[property] = JSON.parse(attribute);
             } catch (e) {
               newSettings[property] = attribute;
