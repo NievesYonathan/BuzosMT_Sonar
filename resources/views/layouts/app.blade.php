@@ -36,7 +36,8 @@
 
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="font-sans antialiased">
@@ -107,7 +108,6 @@
     <!-- Tu script -->
     <script src="{{ asset('js/informes.js') }}"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="{{ asset('js/reporte-inventario.js') }}"></script>
 </body>
 
