@@ -420,11 +420,6 @@ p {
 .accent-lines > div:nth-child(1) > div:nth-child(3){ top: 16em; }
 .accent-lines > div:nth-child(1) > div:nth-child(4){ top: 24em; }
 .accent-lines > div:nth-child(1) > div:nth-child(5){ top: 29em; }
-.accent-lines > div:nth-child(2) > div{
-    position: absolute; top: 0; right: 0; left: 0; margin: auto;
-    width: 1px; height: 100%;
-    background: var(--accent-lines-clr);
-}
 @keyframes accentload {
     0% {
         opacity: 0; scale: 0;
@@ -479,16 +474,7 @@ p {
 .accent-lines > div:nth-child(1) > div:nth-child(1)::before{
     left: 24em; rotate: 45deg; translate: 2.5em 7.5em;
 }
-.accent-lines > div:nth-child(1) > div:nth-child(1)::after{
-    left: 24em; rotate: -45deg; translate: 2.5em 7.5em;
-}
 
-.accent-lines > div:nth-child(1) > div:nth-child(2)::before,
-.accent-lines > div:nth-child(1) > div:nth-child(2)::after {
-    opacity: 0; scale: 0;
-    animation: accentload2 2s ease-out 2.4s forwards;
-}
-.accent-lines > div:nth-child(1) > div:nth-child(1)::before,
 .accent-lines > div:nth-child(1) > div:nth-child(1)::after {
     opacity: 0; scale: 0;
     animation: accentload3 2s ease-out 2.4s forwards;
@@ -643,7 +629,6 @@ p {
     inset 0em 0em 0em 2px #c2ccff,
     inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
     inset -1.2em 2.3em 2em -0.5em #d4e6ff2f;
-    background: #121521;
     z-index: 1;
     filter: brightness(0.8);
     background: repeating-radial-gradient( at 50% 50%, transparent 0%, #c2ccff22 2px, transparent 4px);
