@@ -9,12 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const etiquetas = datos.map(item => item.nombre_materia_prima);
                 const valores = datos.map(item => item.cantidad_total_usada);
                 
-                const colores = datos.map(() => {
-                    const r = Math.floor(Math.random() * 255);
-                    const g = Math.floor(Math.random() * 255);
-                    const b = Math.floor(Math.random() * 255);
-                    return `rgba(${r}, ${g}, ${b}, 0.7)`;
-                });
+                const paleta = [
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)'
+                ];                
+                const colores = datos.map((_, i) => paleta[i % paleta.length]);
 
                 const ctx = canvas.getContext('2d');
                 new Chart(ctx, {
