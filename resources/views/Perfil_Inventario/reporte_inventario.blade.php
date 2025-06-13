@@ -20,7 +20,7 @@
 
                 <!-- Contenedor para el gráfico -->
                 <div class="mb-4" style="min-height: 300px;">
-                    <canvas id="graficoMateriasPrimas"></canvas>
+                    <canvas id="graficoMateriasPrimas" data-materias='@json($materiasPrimas ?? [])'></canvas>
                 </div>
 
                 <!-- Tabla detallada -->
